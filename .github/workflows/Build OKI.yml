@@ -96,86 +96,86 @@ on:
         default: ""
       DYNAMIC_REPO:
         type: string
-        description: "动态清单仓库所有者"
+        description: "Dynamic Repository Owner"
         required: true
         default: "Numbersf"
       BUILD_TIME:
         type: string
-        description: "自定义构建时间(输入F使用当前UTC时间)"
+        description: "Custom Build Time (input 'F' to use current UTC time)"
         required: false
         default: "Fri Dec 12 11:37:03 UTC 2025"
       KSU_META:
         type: string
-        description: "分支名(必填)/自定义版本标识(留空不修改)/回退分支提交哈希版本(留空不修改)"
+        description: "Branch Name (required)/Custom Version Identifier (leave empty to not modify)/Revert Branch Commit Hash (leave empty to not modify)"
         required: false
         default: "builtin/Numbersf/"
       ZRAM:
         type: string
-        description: "ZRAM(0关闭1开启)/算法名/大小"
+        description: "ZRAM (0=disable/1=enable)/Algorithm Name/Size"
         required: true
         default: "0/lz4kd/8589934592"
       SUFFIX:
         type: string
-        description: "自定义内核后缀(不输入使用随机字符串)"
+        description: "Custom Kernel Suffix (leave empty to use random string)"
         required: false
         default: ""
       SUBLEVEL:
-        description: "自定义内核等级欺骗(SUBLEVEL)"
+        description: "Custom Kernel Level Spoofing (SUBLEVEL)"
         required: false
         default: ""
       FAST_BUILD:
         type: boolean
-        description: "是否启用极速构建？"
+        description: "Custom Build Time (input 'F' to use current UTC time)"
         required: true
         default: true
       LSM_BBG:
         type: boolean
-        description: "是否启用关键分区写入保护模块(BBG)？"
+        description: "Custom Kernel Suffix (leave empty to use random string)"
         required: true
         default: true
       NETFILTER:
         type: boolean
-        description: "是否启用网络功能拓展(NETFILTER)？"
+        description: "Custom Kernel Suffix (leave empty to use random string)"
         required: true
         default: true
       CCM:
         type: boolean
-        description: "是否启用网络拥塞控制与管理机制(BBR+ECN)？"
+        description: "Custom Kernel Suffix (leave empty to use random string)"
         required: true
         default: true
       UNICODE_BYPASS:
         type: boolean
-        description: "是否添加Unicode不可见字码点绕过读取漏洞修复？"
+        description: "Fix Unicode？"
         required: true
         default: false
       SCHED_HMBIRD:
         type: boolean
-        description: "是否添加风驰驱动1.0？"
+        description: "Thêm trình điều khiển HMBIRD 1.0？"
         required: true
         default: false
       DROID_SPACES:
         type: boolean
-        description: "是否添加轻量级Linux容器支持(DroidSpaces)？"
+        description: "Kích hoạt hỗ trợ container Linux(DroidSpaces)？"
         required: true
         default: false
       RE_KERNEL:
         type: boolean
-        description: "是否添加Re-Kernel？"
+        description: "Bật Re-Kernel？"
         required: true
         default: false
       SUSFS_DEV:
         type: boolean
-        description: "是否拉取SUSFS-DEV分支？"
+        description: "SUSFS-DEV？"
         required: true
         default: false
       SPACE_NOCLEAN:
         type: boolean
-        description: "是否停用空间清扫？"
+        description: "Có tắt tính năng dọn dẹp không gian không?"
         required: true
         default: false
       BUILD_NOCCACHE:
         type: boolean
-        description: "是否停用此次Ccache？"
+        description: "Tắt Ccache lần này không?"
         required: true
         default: false
 
